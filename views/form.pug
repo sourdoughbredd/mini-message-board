@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1 New Message
+
+  form(method="POST" action="/new" class="messageForm")
+    label(for="user") Name:
+    input(type="text", id="user", name="user")
+
+    label(for="message") Message:
+    textarea(name="message" id="message")
+
+    button(type="submit") Post Message
